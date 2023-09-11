@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>My Web Page</title>
+</head>   
+<body>
+    <div style="background-color: skyblue;">
+        <div id="pic-name">
+            <img src="Test.jpeg" alt="Jessem Quarcks" data-testid="slackDisplayImage">
+            <h1 data-testid="slackUserName">Emmanuel Jesse Nii Quarcoo</h1>
+        </div>
+        <p data-testid="currentDayOfTheWeek"><strong>Day Of Week: </strong>Sunday</p>
+        <p data-testid="currentUTCTime">1631158800000</p>
+        <p data-testid="myTrack">Track: Frontend</p>
+        <a href="https://github.com/JessemQuarcks/your-repo" data-testid="githubURL">GitHub Repository</a>
+    </div>
+
+    <script>
+     document.querySelector("[data-testid='currentUTCTime']").textContent = Date.now();
+    </script>
+</body>
+</html>
+
+</body>
+</html>
