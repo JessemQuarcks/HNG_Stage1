@@ -1,29 +1,19 @@
-img, h1{
-    position:relative;
-}
 img {
-    height: 150px;
-    width: 150px;
-    border-radius: 75px;
-    position: relative;
-    top: 65px;
+    height: 10%;
+    width: 15%;
+    border-radius: 10%;
 }
 
-h1{
-    top: -170px;
-}
-p, a{
-   padding-left: 170px;
-   position: relative;
-   top: -165px;
-}
+
 
 div{
-    padding: 1px;
-    padding-left: 10px;
+   padding: 1rem;
+   size:0dvi;
+    
+
 }
 a:hover{
-    color:rgb(127, 255, 176);
+    color:rgb(165, 127, 255);
 }
 a:visited{
     color:aqua;
