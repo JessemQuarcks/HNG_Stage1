@@ -13,16 +13,16 @@
             <h1 data-testid="slackUserName">Emmanuel Jesse Nii Quarcoo</h1>
         </div>
         <p data-testid="currentDayOfTheWeek"><strong>Day Of Week: </strong>Sunday</p>
-        <p data-testid="currentUTCTime">1631158800000</p>
+        <p data-testid="currentUTCTime"></p>
         <p data-testid="myTrack">Track: Frontend</p>
         <a href="https://github.com/JessemQuarcks/HNG_Stage1" data-testid="githubURL">GitHub Repository</a>
-    </div>
-
-    <script>
-     document.querySelector("[data-testid='currentUTCTime']").textContent = Date.now();
-    </script>
+    </div>  
+<script>
+  const utcTimeElement = document.querySelector("[data-testid='currentUTCTime']");
+  const utcTime = new Date(Date.now()).toUTCString();
+  utcTimeElement.textContent = utcTime;
+</script>
 </body>
 </html>
 
-</body>
-</html>
+
